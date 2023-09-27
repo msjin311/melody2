@@ -17,10 +17,11 @@ import React, { useState } from 'react';
 
         try {
             // Send a POST request to the backend API
-            const response = await fetch('/api/test-user-accounts', {
+            const response = await fetch('/api/test-accounts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    "Clear-Site-Data": "*"
                 },
                 body: JSON.stringify(user),
             });
@@ -61,12 +62,6 @@ import React, { useState } from 'react';
                             <div>
                                 <label >Password</label>
                                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                                {/* Add error message div */}
-                            </div>
-
-                            <div>
-                                <label >Confirm Password</label>
-                                <input type="password" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} required />
                                 {/* Add error message div */}
                             </div>
 

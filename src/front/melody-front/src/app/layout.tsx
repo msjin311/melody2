@@ -31,10 +31,6 @@ const links: LinkItem[] = [
   {
     href: '/playlist',
     key: 'playlist'
-  },
-  {
-    href: '/testSignUP',
-    key: 'test'
   }
 ];
 

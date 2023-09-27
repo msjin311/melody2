@@ -26,7 +26,7 @@ public class UserAccountBasicController {
         return ResponseEntity.ok(userAccounts);
     }
 
-    @GetMapping("/{id }")
+    @GetMapping("/{id}")
     public ResponseEntity<UserAccount> getUserAccountById(@PathVariable Long id) {
         Optional<UserAccount> userAccount = userAccountService.getUserAccountById(id);
         return userAccount.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
