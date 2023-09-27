@@ -28,6 +28,14 @@ const links: LinkItem[] = [
     href: '/login',
     key: 'login',
   },
+  {
+    href: '/playlist',
+    key: 'playlist'
+  },
+  {
+    href: '/testSignUP',
+    key: 'test'
+  }
 ];
 
 type RootLayoutProps = {

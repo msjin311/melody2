@@ -17,7 +17,7 @@ function RegistrationForm() {
         e.preventDefault();
 
         // Create a user object with the form data
-        const user = {
+        const user  = {
             name,
             accountId,
             birthDate,
